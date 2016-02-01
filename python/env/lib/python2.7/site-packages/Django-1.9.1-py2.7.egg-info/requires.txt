@@ -1,4 +1,0 @@
-
-
-[bcrypt]
-bcrypt
