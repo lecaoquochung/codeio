@@ -1,0 +1,410 @@
+{
+  "items": [
+    {
+      "title": "Dashboard",
+
+      "icon": "fa fa-lg fa-fw fa-home",
+      "items": [
+        {
+          "route": "/dashboard",
+          "title": "Analytics Dashboard"
+        },
+        {
+          "route": "/dashboard/social-wall.html",
+          "title": "Social Wall"
+        }
+      ]
+    },
+    {
+      "title": "SmartAdmin Intel",
+      "icon": "fa fa-lg fa-fw fa-cube txt-color-blue",
+      "items": [
+        {
+          "icon": "fa fa-gear",
+          "title": "App Layouts",
+          "route": "smartadmin/app-layouts.html"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Prebuilt Skins",
+          "route": "smartadmin/skins.html"
+        }
+      ]
+    },
+    {
+      "title": "Outlook",
+      "route": "/inbox",
+      "icon": "fa fa-lg fa-fw fa-inbox",
+      "badge": {
+        "label": "14",
+        "class": "badge pull-right"
+      }
+    },
+    {
+      "title": "Graphs",
+      "icon": "fa fa-lg fa-fw fa-bar-chart-o",
+      "items": [
+        {
+          "title": "Flot Chart",
+          "route": "/graphs/flot"
+        },
+        {
+          "title": "Morris Charts",
+          "route": "/graphs/morris"
+        },
+        {
+          "title": "Sparklines",
+          "route": "/graphs/sparklines"
+        },
+        {
+          "title": "EasyPieCharts",
+          "route": "/graphs/easy-pie-charts"
+        },
+        {
+          "title": "Dygraphs",
+          "route": "/graphs/dygraphs"
+        },
+        {
+          "title": "ChartJS",
+          "route": "/graphs/chartjs"
+        },
+        {
+          "title": "HighchartTable",
+          "route": "/graphs/highchart-table",
+          "badge": {
+            "label" : "new",
+            "class": "badge pull-right inbox-badge bg-color-yellow"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Tables",
+      "icon": "fa fa-lg fa-fw fa-table",
+      "items": [
+        {
+          "title": "Normal Tables",
+          "route": "/tables/normal.html"
+        },
+        {
+          "title": "Data Tables",
+          "route": "/tables/datatables",
+          "badge": {
+            "label": "v1.10",
+            "class": "badge inbox-badge bg-color-greenLight"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "icon": "fa fa-lg fa-fw fa-pencil-square-o",
+      "items": [
+        {
+          "title": "Smart Form Elements",
+          "route": "/forms/elements"
+        },
+        {
+          "title": "Smart Form Layouts",
+          "route": "/forms/layouts"
+        },
+        {
+          "title": "Smart Form Validation",
+          "route": "/forms/form-validation.html"
+        },
+        {
+          "title": "Bootstrap Form Elements",
+          "route": "/forms/bootstrap-form-elements.html"
+        },
+        {
+          "title": "Bootstrap Validation",
+          "route": "/forms/bootstrap-validation"
+        },
+        {
+          "title": "Form Plugins",
+          "route": "/forms/plugins"
+        },
+        {
+          "title": "Wizards",
+          "route": "/forms/wizards"
+        },
+        {
+          "title": "Dropzone",
+          "route": "/forms/dropzone"
+        },
+        {
+          "title": "Bootstrap Editors",
+          "route": "/forms/bootstrap-editors"
+        },
+        {
+          "title": "Image Editor",
+          "route": "/forms/image-editor",
+          "badge": {
+            "label" : "new",
+            "class": "badge pull-right inbox-badge bg-color-yellow"
+          }
+        }
+      ]
+    },
+    {
+      "title": "UI Elements",
+      "icon": "fa fa-lg fa-fw fa-desktop",
+      "items": [
+        {
+          "title": "General Elements",
+          "route": "/ui/general"
+        },
+        {
+          "title": "Buttons",
+          "route": "/ui/buttons.html"
+        },
+        {
+          "title": "Icons",
+          "items": [
+            {
+              "icon": "fa fa-plane",
+              "title": "Font Awesome",
+              "route": "/ui/icons/font-awesome"
+            },
+            {
+              "icon": "glyphicon glyphicon-plane",
+              "title": "Glyph Icons",
+              "route": "/ui/icons/glyphicons"
+            },
+            {
+              "icon": "fa fa-flag",
+              "title": "Flags",
+              "route": "/ui/icons/flags"
+            }
+          ]
+        },
+        {
+          "title": "Grid",
+          "route": "/ui/grid.html"
+        },
+        {
+          "title": "Tree View",
+          "route": "/ui/tree-view"
+        },
+        {
+          "title": "Nestable Lists",
+          "route": "/ui/nestable-lists"
+        },
+        {
+          "title": "JQuery UI",
+          "route": "/ui/jquery-ui"
+        },
+        {
+          "title": "Typography",
+          "route": "/ui/typography.html"
+        },
+        {
+          "title": "Six Level Menu",
+          "items": [
+            {
+              "title": "Item #2",
+              "icon": "fa fa-fw fa-folder-open",
+              "items": [
+                {
+                  "title": "Sub #2.1",
+                  "icon": "fa fa-fw fa-folder-open",
+                  "items": [
+                    {
+                      "title": "Item #2.1.1",
+                      "icon": "fa fa-fw fa-file-text"
+                    },
+                    {
+                      "title": "Expand",
+                      "icon": "fa fa-fw fa-plus",
+                      "items": [
+                        {
+                          "title": "File",
+                          "icon": "fa fa-fw fa-file-text"
+                        },
+                        {
+                          "title": "Delete",
+                          "icon": "fa fa-fw fa-trash-o"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Item #3",
+              "icon": "fa fa-fw fa-folder-open",
+              "items": [
+                {
+                  "title": "3ed Level",
+                  "icon": "fa fa-fw fa-folder-open",
+                  "items": [
+                    {
+                      "icon": "fa fa-fw fa-file-text",
+                      "title": "File"
+                    },
+                    {
+                      "icon": "fa fa-fw fa-file-text",
+                      "title": "File"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "title": "Cool Features!",
+      "icon": "fa fa-lg fa-fw fa-cloud",
+      "counter": 3,
+      "items": [
+        {
+          "title": "Calendar",
+          "icon": "fa fa-lg fa-fw fa-calendar",
+          "route": "calendar"
+
+        },
+        {
+          "title": "Maps",
+          "route": "maps",
+          "icon": "fa fa-lg fa-fw fa-map-marker",
+          "badge": {
+            "label": 9,
+            "class": "badge bg-color-greenLight pull-right"
+          }
+        }
+      ]
+    },
+
+    {
+      "title": "Widgets",
+      "route": "/widgets",
+      "icon": "fa fa-lg fa-fw fa-list-alt"
+    },
+    {
+      "title": "App Views",
+      "icon": "fa fa-lg fa-fw fa-puzzle-piece",
+      "items": [
+        {
+          "icon": "fa fa-file-text-o",
+          "title": "Projects",
+          "route": "/views/projects"
+        },
+        {
+          "icon": "fa fa-paragraph",
+          "title": "Blog",
+          "route": "/views/blog.html"
+        },
+        {
+          "icon": "fa fa-picture-o",
+          "title": "Gallery",
+          "route": "/views/gallery"
+        },
+        {
+          "icon": "fa fa-comments",
+          "title": "Forum Layout",
+          "items": [
+            {
+              "icon": "fa fa-picture-o",
+              "title": "General View",
+              "route": "/views/forum/general.html"
+            },
+            {
+              "icon": "fa fa-picture-o",
+              "title": "Topic View",
+              "route": "/views/forum/topic.html"
+            },
+            {
+              "icon": "fa fa-picture-o",
+              "title": "Post View",
+              "route": "/views/forum/post.html"
+            }
+          ]
+        },
+        {
+          "icon": "fa fa-group",
+          "title": "Profile",
+          "route": "/views/profile.html"
+        },
+        {
+          "icon": "fa fa-clock-o",
+          "title": "Timeline",
+          "route": "/views/timeline.html"
+        }
+      ]
+    },
+    {
+      "title": "E-Commerce",
+      "icon": "fa fa-lg fa-fw fa-shopping-cart",
+      "items": [
+        {
+          "title": "Orders",
+          "route": "/e-commerce/orders"
+        },
+        {
+          "title": "Products View",
+          "route": "/e-commerce/products-view.html"
+        },
+        {
+          "title": "Products Detail",
+          "route": "/e-commerce/products-detail.html"
+        }
+
+      ]
+    },
+    {
+      "title": "Miscellaneous",
+      "icon": "fa fa-lg fa-fw fa-windows",
+      "items": [
+        {
+          "title": "Pricing Tables",
+          "route": "/misc/pricing-tables.html"
+        },
+        {
+          "title": "Invoice",
+          "route": "/misc/invoice.html"
+        },
+        {
+          "title": "Login",
+          "route": "/login"
+        },
+        {
+          "title": "Register",
+          "route": "/register"
+        },
+        {
+          "title": "Locked Screen",
+          "route": "/lock"
+        },
+        {
+          "title": "Error 404",
+          "route": "/misc/404"
+        },
+        {
+          "title": "Error 500",
+          "route": "/misc/500"
+        },
+        {
+          "title": "Blank Page",
+          "route": "/misc/blank"
+        },
+        {
+          "title": "Email Template",
+          "route": "/misc/email-template.html"
+        },
+        {
+          "title": "Search",
+          "route": "/misc/search.html"
+        },
+        {
+          "title": "CK Editor",
+          "route": "/misc/ck-editor"
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,10 @@
+
+
+export const CROP_MOVE = 'CROP_MOVE';
+export const CROP_FIELD_CHANGE = 'CROP_FIELD_CHANGE';
+export const CROP_RANDOM_SELECTION = 'CROP_RANDOM_SELECTION';
+
+export const TOGGLE_OPTION = 'TOGGLE_OPTION';
+export const SET_OPTIONS = 'SET_OPTION';
+
+export const JCROP_INIT = 'JCROP_INIT';

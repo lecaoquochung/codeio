@@ -1,0 +1,6 @@
+This seed project/version was provided due to the overloaded request of SmartAdmin users.
+
+Seed project resembles that of a seed, which you will grow over the course of your project cycle. 
+
+The seed version of SmartAdmin contains the very basic essence of the theme itself. It gives you access to only the base structure of the theme (which contains the menu, responsive navigation, and the base theme color). It will have access to all of the basic features of the Bootstrap CSS without the SmartAdmin's custom elements and plugins. 
+

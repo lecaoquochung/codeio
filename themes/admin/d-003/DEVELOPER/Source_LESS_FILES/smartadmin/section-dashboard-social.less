@@ -1,0 +1,130 @@
+.status {
+  .who {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    img {
+      float: left;
+      height: 40px;
+      margin-right: 10px;
+      width: 40px;
+    }
+    .name {
+      display: block;
+      font-size: @font-size-base;
+      font-weight: normal;
+      line-height: normal;
+      b {
+        color: @brand-info;
+      }
+    }
+    .from {
+      font-size: @font-size-base - 1;
+      opacity: 0.7;
+    }
+  }
+  .text {
+    font-size: @font-size-base;
+    line-height: 1.82em;
+    padding: 20px;
+  }
+  .image {
+    padding: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  .links {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    margin: 0;
+    padding: 15px 20px;
+    background: #fafafa;
+    .fa {
+      color: inherit;
+      font-size: @font-size-base + 1;
+      margin-right: 2px;
+    }
+    li {
+      display: inline;
+      padding-right: 20px;
+    }
+  }
+  .comments {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    font-size: @font-size-base;
+    padding: 0 20px;
+    li {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+      display: block;
+      padding: 15px 0 15px 40px;
+      position: relative;
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 5px;
+      }
+    }
+    img {
+      height: 30px;
+      left: 0px;
+      position: absolute;
+      width: 30px;
+    }
+    .name {
+      display: block;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+  }
+}
+.status.panel-body {
+    padding:0px;
+}
+.well.connect {
+  padding:14px;
+  img {
+    border-radius: 50% 50% 0;
+  }
+}
+.status.vote {
+  .comments {
+    padding:0px !important;
+    li {
+      padding:10px 0 10px 20px !important;
+    }
+    li:last-child {
+      padding-right:20px !important;
+    }
+  }
+}
+
+blockquote.twitter-tweet {
+  border-color: #eeeeee #dddddd #bbbbbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  margin: 10px 5px;
+  width: ~"calc(100% - 10px)";
+  padding: 0 16px 16px 16px;
+  p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  a {
+    color: inherit;
+    font-weight: normal;
+    outline: 0 none;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}

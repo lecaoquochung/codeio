@@ -1,0 +1,65 @@
+/*!
+ * SmartAdmin - Responsive WebApp
+ */
+
+// Core variables and mixins
+@import "../COMMON_ASSETS/LESS_FILES/variables.less";
+@import "../COMMON_ASSETS/LESS_FILES/3.3.6/mixins.less";
+@import "../COMMON_ASSETS/LESS_FILES/elements/elements.less";
+@import "../COMMON_ASSETS/LESS_FILES/custom.less"; // custom variable overrides
+
+// Plugins have been moved to "smartadmin-production-plugins.less" file (because IE cannot handle more than 4096 selectors in a stylesheet)
+
+// Libraries (Remove if not needed)
+/*@import "../COMMON_ASSETS/LESS_FILES/library/animation/animation-engine.less";
+@import "../COMMON_ASSETS/LESS_FILES/library/jqueryui/jquery-ui-1.10.3.custom.less";*/
+@import "../COMMON_ASSETS/LESS_FILES/library/flags/flags.less";
+/*@import "../COMMON_ASSETS/LESS_FILES/library/cursors/cursors.less";*/
+
+// Individual pages, sections, and components.  You can remove any of these sections you don't use
+
+// Components
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/component-fullscreen.less";
+/*@import "../COMMON_ASSETS/LESS_FILES/smartadmin/component-jqueryui.less"; // dependency: jquery-ui-1.10.3.custom.less
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/component-pricingtable.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/component-pace.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/component-smartchat.less";*/
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/component-smartforms.less";
+
+// Pages
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/page-error.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/page-extr.less";
+
+// Sections
+/*@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-nestables.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-calendar.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-inbox.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-profile.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-search.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-todo.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-timeline.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-forum.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-ajax-msg.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/section-projects.less";*/
+
+// Main THEME (Imports by order - do not change order)
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main.less";
+/*@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-progress.less";*/
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-container-fix.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-special-class.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-form-radiocheck.less";
+/*@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-animated.less";*/
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-colorpallet.less";
+/*@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-colorblind.less";*/
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-page-footer.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/main-responsive.less";
+
+// Patches
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/ie-fix.less";
+
+// UI (overrides and new)
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/top-menu.less";
+@import "../COMMON_ASSETS/LESS_FILES/smartadmin/no-menu.less";
+
+// Overrides
+@import "../COMMON_ASSETS/LESS_FILES/overrides.less";

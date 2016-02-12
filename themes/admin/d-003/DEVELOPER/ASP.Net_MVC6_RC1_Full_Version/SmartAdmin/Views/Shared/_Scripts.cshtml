@@ -1,0 +1,41 @@
+﻿<!-- IMPORTANT: jQuery -->
+<script src="~/js/libs/jquery-2.1.1.min.js"></script>
+<script src="~/js/libs/jquery-ui-1.10.3.min.js"></script>
+@if (User.Identity.IsAuthenticated) {
+    <!-- IMPORTANT: SmartAdmin Demo Only! -->
+    <script src="~/js/demo.min.js"></script>
+}
+<!-- IMPORTANT: SmartAdmin Core -->
+<script src="~/js/smartadmin.js"></script>
+
+<!-- Voice command : plugin -->
+<script src="~/js/speech/voicecommand.min.js"></script>
+
+<!-- SmartChat UI : plugin -->
+<script src="~/js/smart-chat.js"></script>
+
+<!-- DataTables : plugin -->
+<script src="~/js/smart-datatables.js"></script>
+
+<!-- jQGrid : plugin -->
+<script src="~/js/smart-jq-grid.js"></script>
+
+<!-- Forms : plugin -->
+<script src="~/js/plugin/jquery-form/jquery-form.min.js"></script>
+
+<!-- Flot Chart Plugin: Flot Engine, Flot Resizer, Flot Tooltip, Morris, Sparkline, EasyPie -->
+<script src="~/js/smart-charts.js"></script>
+
+<!-- Vector Maps Plugin: Vectormap engine, Vectormap language -->
+<script src="~/js/smart-vector.js"></script>
+
+<!-- Full Calendar -->
+<script src="~/js/smart-calendar.js"></script>
+
+<!-- DO NOT REMOVE : GLOBAL FUNCTIONS! -->
+<script>
+    $(document).ready(function () {
+        pageSetUp();
+        drawBreadCrumb();
+    });
+</script>

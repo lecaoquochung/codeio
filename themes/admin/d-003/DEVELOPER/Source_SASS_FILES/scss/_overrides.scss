@@ -1,0 +1,9 @@
+// need to override just one or two small stylistic things and don't want to edit the main .less files?  Add those overrides here
+
+body:not(.menu-on-top).desktop-detected {
+	min-height: 1200px !important;
+}
+
+#extr-page body.desktop-detected {
+	min-height: 100% !important;
+}

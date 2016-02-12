@@ -1,0 +1,104 @@
+[
+    {
+        "outputFileName": "wwwroot/css/smartadmin.css",
+        "inputFiles": [
+            "wwwroot/css/bootstrap.min.css",
+            "wwwroot/css/font-awesome.min.css",
+            "wwwroot/css/smartadmin-production.min.css",
+            "wwwroot/css/smartadmin-production-plugins.min.css",
+            "wwwroot/css/smartadmin-skins.min.css",
+            "wwwroot/css/smartadmin-rtl.min.css",
+            "wwwroot/css/demo.min.css",
+            "wwwroot/css/site.min.css"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smartadmin.js",
+        "inputFiles": [
+            "wwwroot/js/app.config.js",
+            "wwwroot/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js",
+            "wwwroot/js/bootstrap/bootstrap.min.js",
+            "wwwroot/js/notification/SmartNotification.min.js",
+            "wwwroot/js/smartwidgets/jarvis.widget.min.js",
+            "wwwroot/js/plugin/jquery-validate/jquery.validate.min.js",
+            "wwwroot/js/plugin/masked-input/jquery.maskedinput.min.js",
+            "wwwroot/js/plugin/select2/select2.min.js",
+            "wwwroot/js/plugin/bootstrap-slider/bootstrap-slider.min.js",
+            "wwwroot/js/plugin/bootstrap-progressbar/bootstrap-progressbar.min.js",
+            "wwwroot/js/plugin/msie-fix/jquery.mb.browser.min.js",
+            "wwwroot/js/plugin/fastclick/fastclick.min.js",
+            "wwwroot/js/app.min.js",
+            "wwwroot/js/site.min.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smart-chat.js",
+        "inputFiles": [
+            "wwwroot/js/smart-chat-ui/smart.chat.ui.min.js",
+            "wwwroot/js/smart-chat-ui/smart.chat.manager.min.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smart-datatables.js",
+        "inputFiles": [
+            "wwwroot/js/plugin/datatables/jquery.dataTables.min.js",
+            "wwwroot/js/plugin/datatables/dataTables.colVis.min.js",
+            "wwwroot/js/plugin/datatables/dataTables.tableTools.min.js",
+            "wwwroot/js/plugin/datatables/dataTables.bootstrap.min.js",
+            "wwwroot/js/plugin/datatable-responsive/datatables.responsive.min.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smart-jq-grid.js",
+        "inputFiles": [
+            "wwwroot/js/plugin/jqgrid/jquery.jqGrid.min.js",
+            "wwwroot/js/plugin/jqgrid/grid.locale-en.min.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smart-charts.js",
+        "inputFiles": [
+            "wwwroot/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js",
+            "wwwroot/js/plugin/sparkline/jquery.sparkline.min.js",
+            "wwwroot/js/plugin/morris/morris.min.js",
+            "wwwroot/js/plugin/morris/raphael.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.cust.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.resize.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.time.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.fillbetween.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.orderBar.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.pie.min.js",
+            "wwwroot/js/plugin/flot/jquery.flot.tooltip.min.js",
+            "wwwroot/js/plugin/dygraphs/dygraph-combined.min.js",
+            "wwwroot/js/plugin/chartjs/chart.min.js",
+            "wwwroot/js/plugin/highChartCore/highcharts-custom.min.js",
+            "wwwroot/js/plugin/highchartTable/jquery.highchartTable.min.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smart-vector.js",
+        "inputFiles": [
+            "wwwroot/js/plugin/vectormap/jquery-jvectormap-1.2.2.min.js",
+            "wwwroot/js/plugin/vectormap/jquery-jvectormap-world-mill-en.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smart-calendar.js",
+        "inputFiles": [
+            "wwwroot/js/plugin/moment/moment.min.js",
+            "wwwroot/js/plugin/fullcalendar/jquery.fullcalendar.min.js"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/css/site.css",
+        "inputFiles": [
+            "wwwroot/css/site.css"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/site.js",
+        "inputFiles": [
+            "wwwroot/js/site.js"
+        ]
+    }
+]
