@@ -1,7 +1,7 @@
 /*!
  * SmartAdmin's Gruntfile for HTML / AJAX / PHP Versions (there is a different 
- * grunt file for the angluarJS version, see its related directory)
- * Copyright 2014-2015 MYORANGE INC.
+ * gulp file for the angluarJS & ReactJS versions, please see its related directory)
+ * Copyright 2014-2016 MYORANGE INC.
  */
 
 module.exports = function(grunt) {
@@ -9,14 +9,13 @@ module.exports = function(grunt) {
   
   // DEFINE DIRECTORY FOR SMARTADMIN VERSION HERE
   var globalConfig = {
-    src: 'COMMON_ASSETS',
-    dest: 'AJAX_version' // PHP_version/PHP_AJAX_Version | PHP_version/PHP_HTML_version | HTML_version | AJAX_version |
-                         // NOTE: A different grunt.js file is used for the AngularJS_version
+    src: 'COMMON_ASSETS', 
+    dest: 'AJAX_full_version' // PHP_AJAX_full_Version | PHP_HTML_full_version | HTML_full_version | AJAX_full_version |
   };
     
-  // DEFINE 	  
+  // DEFINE     
   grunt.initConfig({
-  	globalConfig: globalConfig,
+    globalConfig: globalConfig,
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
             ' * SmartAdmin v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
@@ -24,13 +23,13 @@ module.exports = function(grunt) {
             ' */\n',
     jqueryCheck: 'if (typeof jQuery === \'undefined\') { throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery\') }\n\n',
     
-	// JS TESTING    
+  // JS TESTING    
     'jshint': {
       files: [
         'Gruntfile.js', 
-        '<%= globalConfig.src %>/UNMINIFIED_JS/app.js',
-        '<%= globalConfig.src %>/UNMINIFIED_JS/smartwidgets',
-        '<%= globalConfig.src %>/UNMINIFIED_JS/speech'
+        'Source_UNMINIFIED_JS/app.js',
+        'Source_UNMINIFIED_JS/smartwidgets',
+        'Source_UNMINIFIED_JS/speech'
       ],
       options: {
         // options here to override JSHint defaults
@@ -46,16 +45,17 @@ module.exports = function(grunt) {
     // MINIFY JS FILE
     'uglify': {
       options: {
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-          '<%= grunt.template.today("yyyy-mm-dd") %> */',
+        preserveComments: 'some',
+        //banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+        //  '<%= grunt.template.today("yyyy-mm-dd") %> */',
         beautify : {
-	        beautify: false,
-	        ascii_only: true,
-	        quote_keys: true
-	    }  
+          beautify: false,
+          ascii_only: true,
+          quote_keys: true
+      }  
       },
-	  build: {
-	  	
+    build: {
+      
         // Grunt will search for "**/*.js" under "lib/" when the "uglify" task
         // runs and build the appropriate src-dest file mappings then, so you
         // don't need to update the Gruntfile when files are added or removed.
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             expand: true,
             src: ['**/*.js', '!**/*.min.js', '!**/*.backup.js'],
             dest: '<%= globalConfig.dest %>/js/',
-            cwd: '<%= globalConfig.src %>/UNMINIFIED_JS/',
+            cwd: 'Source_UNMINIFIED_JS/',
             extDot: 'last',
             ext: '.min.js'
             
@@ -71,52 +71,52 @@ module.exports = function(grunt) {
       }
     },
 
-	// SASS FILE COMPILATION
-	'sass': {
-	  development: {
-	    options: {
-	      banner: '<%= banner %>'
-	    },
-	    files: {
-          "<%= globalConfig.src %>/UNMINIFIED_CSS/bootstrap.css": "<%= globalConfig.src %>/SASS_FILES/scss/bootstrap.scss",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/smartadmin-production.css": "<%= globalConfig.src %>/SASS_FILES/scss/smartadmin-production.scss",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/font-awesome.css": "<%= globalConfig.src %>/SASS_FILES/scss/library/fontawesome/font-awesome.scss",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/smartadmin-skins.css": "<%= globalConfig.src %>/SASS_FILES/scss/smartadmin-skin/smartadmin-skins.scss"
-	    }
-	  }
-	},	
+  // SASS FILE COMPILATION
+  'sass': {
+    development: {
+      options: {
+        banner: '<%= banner %>'
+      },
+      files: {
+        "Source_UNMINIFIED_CSS/bootstrap.css": "Source_SASS_FILES/scss/bootstrap.scss",
+        "Source_UNMINIFIED_CSS/smartadmin-production.css": "Source_SASS_FILES/scss/smartadmin-production.scss",
+        "Source_UNMINIFIED_CSS/font-awesome.css": "Source_SASS_FILES/scss/library/fontawesome/font-awesome.scss",
+        "Source_UNMINIFIED_CSS/smartadmin-skins.css": "Source_SASS_FILES/scss/smartadmin-skin/smartadmin-skins.scss"
+      }
+    }
+  },  
     
     // LESS FILE COMPILATION
-	'less': {
-	  development: {
-	    options: {
-	      banner: '<%= banner %>'
-	    },
-	    files: {
-        "<%= globalConfig.src %>/UNMINIFIED_CSS/bootstrap.css": "<%= globalConfig.src %>/LESS_FILES/bootstrap.less",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/smartadmin-production.css": "<%= globalConfig.src %>/LESS_FILES/smartadmin-production.less",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/smartadmin-production-plugins.css": "<%= globalConfig.src %>/LESS_FILES/smartadmin-production-plugins.less",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/font-awesome.css": "<%= globalConfig.src %>/LESS_FILES/library/fontawesome/font-awesome.less",
-	      "<%= globalConfig.src %>/UNMINIFIED_CSS/smartadmin-skins.css": "<%= globalConfig.src %>/LESS_FILES/smartadmin-skin/smartadmin-skins.less"
-	    }
-	  }
-	},
-	
-	// MINIFY CSS
-	'cssmin': {
-	  minify: {
-	    expand: true,
-	    src: ['*.css', '!*.min.css'],
-	    dest: '<%= globalConfig.dest %>/css/',
-	    cwd: '<%= globalConfig.src %>/UNMINIFIED_CSS/',
-	    extDot: 'last',
-	    ext: '.min.css'
-	  }
-	},
-	
+  'less': {
+    development: {
+      options: {
+        banner: '<%= banner %>'
+      },
+      files: {
+        "Source_UNMINIFIED_CSS/bootstrap.css": "Source_LESS_FILES/bootstrap.less",
+        "Source_UNMINIFIED_CSS/smartadmin-production.css": "Source_LESS_FILES/smartadmin-production.less",
+        "Source_UNMINIFIED_CSS/smartadmin-production-plugins.css": "Source_LESS_FILES/smartadmin-production-plugins.less",
+        "Source_UNMINIFIED_CSS/font-awesome.css": "Source_LESS_FILES/library/fontawesome/font-awesome.less",
+        "Source_UNMINIFIED_CSS/smartadmin-skins.css": "Source_LESS_FILES/smartadmin-skin/smartadmin-skins.less"
+      }
+    }
+  },
+  
+  // MINIFY CSS
+  'cssmin': {
+    minify: {
+      expand: true,
+      src: ['*.css', '!*.min.css'],
+      dest: '<%= globalConfig.dest %>/css/',
+      cwd: 'Source_UNMINIFIED_CSS/',
+      extDot: 'last',
+      ext: '.min.css'
+    }
+  },
+  
     // WATCH FILES FOR CHANGES
     watch: {
-      files: ['<%= globalConfig.src %>/LESS_FILES/smartadmin/top-menu.less','<%= globalConfig.src %>/UNMINIFIED_JS/app.js', '<%= globalConfig.src %>/UNMINIFIED_JS/demo.js'],
+      files: ['Source_LESS_FILES/smartadmin/top-menu.less','Source_UNMINIFIED_JS/app.js', 'Source_UNMINIFIED_JS/demo.js'],
       tasks: ['less','cssmin']
     }
   });
