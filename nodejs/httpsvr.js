@@ -4,6 +4,6 @@ var file = new static.Server();
 
 http.createServer(function (req, res) {
   file.serve(req, res);
-}).listen(1337, '192.168.11.200');
+}).listen(9000, '192.168.11.200');
 
 console.log('Server running at http://192.168.11.200');
