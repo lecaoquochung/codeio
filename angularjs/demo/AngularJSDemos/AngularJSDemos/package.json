@@ -1,0 +1,19 @@
+{
+  "name": "AngularJSDemos",
+  "version": "1.0.0",
+  "description": "Angular Demos",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.11.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "Angular",
+    "JavaScript"
+  ],
+  "author": "Dan Wahlin",
+  "license": "MIT"
+}
