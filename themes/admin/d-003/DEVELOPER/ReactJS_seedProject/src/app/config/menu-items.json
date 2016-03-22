@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "title": "Blank",
+      "icon": "fa fa-lg fa-fw fa-home",
+      "route": "/home"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "smartadmin-reactjs",
+  "version": "1.8.1",
+  "description": "",
+  "main": "web/index.html",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack/webpack.build.config.js --progress --colors",
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.dev.config.js --progress --colors --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://smartadmin-reactjs@bitbucket.org/smartadmin-reactjs/smartadmin-reactjs.git"
+  },
+  "author": "sunny",
+  "license": "wrapbootstrap",
+  "homepage": "https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "classnames": "^2.2.1",
+    "clean-webpack-plugin": "^0.1.5",
+    "css-loader": "^0.23.0",
+    "exports-loader": "^0.6.2",
+    "file-loader": "^0.8.5",
+    "history": "^1.17.x",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "lodash": "^3.10.1",
+    "react": "^0.14.3",
+    "react-addons-linked-state-mixin": "^0.14.3",
+    "react-bootstrap": "^0.28.1",
+    "react-dom": "^0.14.3",
+    "react-google-maps": "^4.7.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^1.0.0",
+    "react-tap-event-plugin": "^0.2.1",
+    "reflux": "^0.3.0",
+    "script-loader": "^0.6.1",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0",
+    "yargs": "^3.31.0",
+    "react-redux": "^4.0.6",
+    "redux": "^3.0.5"
+  }
+}

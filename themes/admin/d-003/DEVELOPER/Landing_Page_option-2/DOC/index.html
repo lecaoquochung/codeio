@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Documentation - Metrize (Responsive Flipcard Template)</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="description">
+    <meta content="MyOrange Inc" name="author"><!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <style type="text/css">
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon"
+    sizes="72x72">
+    <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon"
+    sizes="114x114">
+</head>
+
+<body data-spy="scroll" id="top">
+    <!-- Documentation Navbar -->
+
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-target=".nav-collapse"
+                data-toggle="collapse"></a> <a class="brand" href="#">Metrize</a> 
+                <!-- TIP: Change this for the name of your file -->
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a class="active" href="#top">Top</a></li>
+
+                        <li><a href="#markup">Markup</a></li>
+
+                        <li><a href="#styles">Styles</a></li>
+
+                        <li><a href="#javascript">JavaScript</a></li>
+
+                        <li><a href="#php">PHP</a></li>
+
+                        <li><a href="#fonts">Fonts</a></li>
+
+                        <li><a href="#credits">Credits</a></li>
+
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- End of Navbar -->
+    <!-- Main Container Beginning -->
+
+    <div class="container">
+        <div class="masthead">
+            <h1>Metrize - Responsive Flipcard Template</h1>
+        </div><!-- masthead -->
+
+        <section id="markup">
+            <div class="page-header">
+                <h1>Markup <small>Markup customization and
+                highlights</small></h1>
+            </div>
+
+            <div class="row">
+                <div class="span3">
+                    <h3>General Markup</h3>
+
+                   <p>There are three pages included in this pack. The first one is <code>index.html</code> where inside the pages with classes <code>about-page</code>, <code>portfolio-page</code>, <code>resume-page</code> and <code>contact-page</code>. Others are <code>blog.html</code> and <code>blog-single.html</code>. Here's the outlining of the first page:
+                </div>
+
+                <div class="span9">
+                    <pre class="prettyprint linenums">
+&lt;!-- Full Front page Area --&gt;
+&lt;div class="page-front container"&gt;
+&lt;!-- Sliders, socials, grid-boxes --&gt;
+     -------------
+     -------------
+&lt;!-- Main Navigation --&gt;
+    &lt;nav role="navigation"&gt;
+        &lt;ul class="main-nav"&gt;
+            &lt;!-- Navigation Markup --&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt; &lt;!-- End Page-front --&gt;
+
+&lt;!-- Content for Pages --&gt;
+&lt;div class="content-pages"&gt;
+     &lt;!-- Content for about page --&gt;
+    &lt;div class="about-page"&gt;  
+        .....
+        &lt;div class="container"&gt;     &lt;!-- Every page has container div for layout --&gt;
+            &lt;div class="row"&gt;
+                &lt;!-- Row class inside for arranging them in row (see bootstrap doc) --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Content for Portfolio Page --&gt;
+    &lt;div class="portfolio-page"&gt;
+        &lt;div class="container"&gt;
+             &lt;div class="row"&gt;
+                
+            &lt;/div&gt; 
+
+            &lt;!-- Other rows, classes, contents --&gt;   
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Content for Resume Page --&gt;
+    &lt;div class="resume-page"&gt;
+        &lt;div class="container"&gt;   
+            &lt;div class="row"&gt;
+                
+            &lt;/div&gt;  
+             &lt;!-- Others rows, classes, contents --&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;!-- Content for contact Page --&gt;
+    &lt;div class="contact-page"&gt;
+        &lt;div class="container"&gt; 
+            &lt;div class="row"&gt;
+                
+            &lt;/div&gt;    
+             &lt;!-- Others rows, classes, contents --&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+     &lt;!-- Inner navigation --&gt;
+      &lt;nav class="inner-nav" id="inner-nav&gt;
+        ......
+            ......
+      &lt;/nav&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row">
+                <div class="span3">
+                    <h3>Important Classes Used</h3>
+
+                    <p>Here I'll describe the some of the boostrap classes which was used in this theme. You'll find more about at <a href="http://getbootstrap.com" target="_blank">bootstrap</a> doc online.</p>
+                </div>
+
+                <div class="span9">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Classes</th>
+
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><code>.container</code></td>
+
+                                <td>Set the width of page. Default is 1170px.</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>.row</code></td>
+
+                                <td>For grouping content in a row</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>.col-md-*, .col-sm-*</code></td>
+
+                                <td>For grouping content in column and set their width, `md` stands medium device, `sm` for small devices (iPhone, Tabs etc...)</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>.elegant-*</code></td>
+
+                                <td>Not a bootstrap class, but a icon fonts class used for custom icons.</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>parallax</code></td>
+                                <td>For parallax effect in background image. To edit its speed, edit the <code>custom.js</code> file</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr>
+            </div>
+        </section><!-- Markup -->
+
+        <section id="styles">
+            <div class="page-header">
+                <h1>Styles <small>Styles customization and
+                highlights</small></h1>
+            </div>
+
+            <div class="alert alert-info">
+               <p>I've built the style of the theme in `less` file for time saving and complex code. The syntax of the less file is almost same as css but with
+                added flexibility. If you know css then you can easily understand `less` style in a minute. If you want to edit the style of the template, then you can edit less files (then compile into css) or directly edit css. However less stylesheet is split into codes for each page content so it will be easy to edit `less`. (If you have a <em>less</em> command line installed in your system, you can compile with <em>lessc</em> command</p>
+            </div>
+
+            <div class="row">
+                <div class="span3">
+                    <h3>CSS Stylesheets</h3>
+
+                    <p> There are 5 files in the css folder. The important one are <em>main.css</em> and <em>bootstrap-custom.css</em>. Other file are from their respective javascript plugin.</p>
+                </div>
+
+                <div class="span9">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>File Name</th>
+
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                             <tr>
+                                <td><code>bootstrap-custom.css</code></td>
+
+                                <td>Custom bootstrap css file (not all functionality included)</td>
+                            </tr>
+                            <tr>
+                                <td><code>main.css</code></td>
+
+                                <td>Main user defined style</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>magnific-popup</code></td>
+
+                                <td>To be used with magnific-popup script. Edit this if you want to edit the popup style</td>
+                            </tr>
+                            <tr>
+                                <td><code>owl.carousel.css, owl.theme.css</code></td>
+
+                                <td>Used for owl.carousel.min.js script file.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr>
+             <div class="row">
+                <div class="span4">
+                    <h3>Less Stylesheets (only if you know less)</h3>
+
+                    <p> Less stylesheet is split into codes for each page content so that it will be easy for user to customize. After editing any of less files
+                    you have to compile them to css for production use. You can use one of the tools available online. (for eg: `lesstester`, less2css etc.). Note that, there is no need to use `less` if you doesn't know them.</p>
+                    <p>All of the less files can be found in less folder. There is also a customize boostrap folder inside this. If you edit any of the files, then you have to compile only <code>main.less</code> file. All other files included by default. Here's the list of less files (not including bootstrap folder):</p>
+                </div>
+                <div class="span8">
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <td><code>main.less</code></td>
+
+                            <td>Compile only this, if you edit any of less file. Imports <code>bootstrap.less</code> and all other included in the folder.</td>
+                        </tr>
+                        <tr>
+                            <td><code>about.less</code></td>
+
+                            <td>Style for <code>.about-page</code> class content</td>
+                        </tr>
+                        <tr>
+                            <td><code>blog.less</code></td>
+
+                            <td>Style for <code>blog.html</code> and <code>blog-single.html</code> pages</td>
+                        </tr>
+                        <tr>
+                            <td><code>portfolio.less</code></td>
+
+                            <td>Style for <code>.portfolio-page</code> class content</td>
+                        </tr>
+                        <tr>
+                            <td><code>resume.less</code></td>
+
+                            <td>Style for <code>.resume-page</code> class content</td>
+                        </tr>
+                        <tr>
+                            <td><code>contact.less</code></td>
+
+                            <td>Style for <code>.contact-page</code> class content</td>
+                        </tr>
+                        <tr>
+                            <td><code>common.less</code></td>
+
+                            <td>Common style used by whole template</td>
+                        </tr>
+                        <tr>
+                            <td><code>responsive.less</code></td>
+
+                            <td>Style for mobile device and to make theme responsive</td>
+                        </tr>
+                        <tr>
+                            <td><code>custom-classes.less</code></td>
+
+                            <td>Includes styles for classes used by JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td><code>page-front.less</code></td>
+
+                            <td>Style for <code>.page-front</code> content</td>
+                        </tr>
+
+                    </table>
+                </div>
+             </div>
+            <hr>
+        </section>
+
+        <section id="javascript">
+            <div class="page-header">
+                <h1>JavaScript <small>JavaScript customization and
+                highlights</small></h1>
+            </div>
+
+            <div class="row">
+                <div class="span3">
+                    <h3>JavaScript Files</h3>
+
+                    <p>This template imports various plugins along with a custom script file. You don't need to edit these plugins, just edit custom script. However if you want additional functionality, see the doc of these plugins at their respective sites. The script <code>skill.js</code> and <code>flip.js</code> are written by me.
+                </div>
+
+                <div class="span9">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><code>jquery.js</code></td>
+
+                                <td>jQuery is a Javascript library that greatly
+                                reduces the amount of code that you must
+                                write.</td>
+                            </tr>
+
+                            <tr>
+                                <td><code>owl.carousel.min.js</code></td>
+
+                                <td>For used with twitter fetcher plugin. Learn more about this <a href="http://owlgraphic.com/owlcarousel/" target="_blank">here</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>debounce.js</code></td>
+
+                                <td>Resizing Event plugin.</td>
+                            </tr>
+                            <tr>
+                                <td><code>jquery.validate.js</code></td>
+
+                                <td>This is used for form validation. Learn more about this <a href="http://jqueryvalidation.org/" target="_blank">here</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>snap.svg.js</code></td>
+
+                                <td>Used for svg drawings- I use it for skill diagram in resume page. Doc <a href="http://snapsvg.io/" target="_blank">here</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>isotope.js</code></td>
+
+                                <td>For filtering images in works-tab. Learn more about this <a href="http://isotope.metafizzy.co/" target="_blank">here</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>magnific-popup.js</code></td>
+
+                                <td>For popup. Used in portfolio page content Learn more about this <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">here</a></td>
+                            </tr>
+                            <tr>
+                                <td><code>fastclick.js</code></td>
+
+                                <td>To stop 300ms delay in mobile browsers</a></td>
+                            </tr>
+                             <tr>
+                                <td><code>placeholder.js</code></td>
+
+                                <td>Used for IE9 to display placeholder text. See the doc<a href="https://github.com/mathiasbynens/jquery-placeholder" target="_blank"> here </a></td>
+                            </tr>
+                            <tr>
+                                <td><code>twitterFetcher.js</code></td>
+
+                                <td>Used for fetching twitter tweets. See the doc <a href="http://jasonmayes.com/projects/twitterApi/" target="_blank">here</a></td>
+                            </tr>
+                             <tr>
+                                <td><code>Modernizr.js</code></td>
+
+                                <td>For detecting css3 animations. See the doc <a href="http://modernizr.com/" target="_blank">here</a></td>
+                             </tr>
+
+                             <tr>
+                                <td><code>custom.js</code></td>
+
+                                <td>All the plugin initialization and animations are carried out by this plugin. You can edit this script(if you want).</td>
+                            </tr>
+                             <tr>
+                                <td><code>skill.js</code></td>
+
+                                <td>For drawing skill chart diagram (dependency -- snap.svg.js, debounce.js). For various options of this plugin, see the script. You'll find all at the start of the script</td>
+                            </tr>
+
+                             <tr>
+                                <td><code>flip.js</code></td>
+                                <td>Script for flip effect in the grid-boxes. See the config options in the file.</td>
+                            </tr>
+
+                             <tr>
+                                <td><code>masonry.pkgd.min.js</code></td>
+                                <td>Script for arranging grid-boxes in a masonry style</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+        </section><!-- JavaScript -->
+
+        <section id="php">
+            <div class="page-header">
+                <h1>PHP File </h1>
+            </div>
+            <div class="row">
+                <div class="span3">I have used only one php file for email sending named <code>contact.php</code>. To make the contact form work, you need to edit this file. Note that this is only a simple contact form script. For complex/additional functionality you can search google for it</div>
+                <div class="span9">
+                    <pre class="prettyprint linenums">
+/** Change following line to make it work **/
+ $to = "john@doe.com"; // Enter your email here 
+</pre>  
+                </div>
+            </div>
+            
+        </section> <!-- End Fonts -->
+
+        <section id="fonts">
+            <div class="page-header">
+                <h1>Font Files Used </h1>
+            </div>
+            <p>I have used two fonts in this template</p>
+            <ol>
+                <li><a href="http://www.elegantthemes.com/blog/resources/elegant-icon-font">elegant</a> Font - For Icons Fonts</li>
+                <li>PT Sans - By google web fonts</a></li>
+            </ol>
+        </section> <!-- End Fonts -->
+
+
+        <section id="credits">
+            <div class="page-header">
+                <h1>Credits Files <small>Some of your credits and
+                sources</small></h1>
+            </div>
+
+            <p>I've used the following images, icons or other files as
+            listed.</p>
+
+            <h3>JavaScript</h3>
+
+            <p> &nbsp;&nbsp;Links above in JavaScript Section</p>
+
+            <h3>Placeholder Images</h3>
+
+            <ol>
+                <li><a href="placehold.it/">Placeholder Images</a> &mdash; For used in portfolio page content</li>
+            </ol>
+        </section><!-- Credits -->
+        <hr>
+
+
+        <footer>
+            <p>&copy; MyOrange Inc.</p>
+        </footer>
+    </div><!-- /container --><!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster --><script src="assets/js/jquery.js"></script><script src="assets/js/scripts.js"></script><script src="assets/js/google-code-prettify/prettify.js"></script><script src="assets/js/bootstrap-transition.js"></script><script src="assets/js/bootstrap-alert.js"></script><script src="assets/js/bootstrap-modal.js"></script><script src="assets/js/bootstrap-dropdown.js"></script><script src="assets/js/bootstrap-scrollspy.js"></script><script src="assets/js/bootstrap-tab.js"></script><script src="assets/js/bootstrap-tooltip.js"></script><script src="assets/js/bootstrap-popover.js"></script><script src="assets/js/bootstrap-button.js"></script><script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>

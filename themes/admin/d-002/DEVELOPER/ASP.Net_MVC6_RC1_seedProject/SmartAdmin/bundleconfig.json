@@ -1,0 +1,23 @@
+[
+    {
+        "outputFileName": "wwwroot/css/smartadmin.css",
+        "inputFiles": [
+            "wwwroot/css/bootstrap.min.css",
+            "wwwroot/lib/font-awesome/css/font-awesome.min.css",
+            "wwwroot/css/smartadmin-production.min.css",
+            "wwwroot/css/smartadmin-skins.min.css",
+            "wwwroot/css/smartadmin-rtl.min.css",
+            "wwwroot/css/site.min.css"
+        ]
+    },
+    {
+        "outputFileName": "wwwroot/js/smartadmin.js",
+        "inputFiles": [
+            "wwwroot/lib/jquery/dist/jquery.min.js",
+            "wwwroot/js/app.config.seed.min.js",
+            "wwwroot/js/bootstrap/bootstrap.min.js",
+            "wwwroot/js/app.seed.min.js",
+            "wwwroot/js/site.min.js"
+        ]
+    }
+]

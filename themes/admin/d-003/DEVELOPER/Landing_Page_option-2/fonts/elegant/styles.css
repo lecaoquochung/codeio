@@ -1,0 +1,1120 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "elegant";
+  src:url("fonts/elegant.eot");
+  src:url("fonts/elegant.eot?#iefix") format("embedded-opentype"),
+    url("fonts/elegant.woff") format("woff"),
+    url("fonts/elegant.ttf") format("truetype"),
+    url("fonts/elegant.svg#elegant") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "elegant" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="elegant-"]:before,
+[class*=" elegant-"]:before {
+  font-family: "elegant" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.elegant-eleganticons:before {
+  content: "a";
+}
+.elegant-eleganticons-1:before {
+  content: "b";
+}
+.elegant-eleganticons-2:before {
+  content: "c";
+}
+.elegant-eleganticons-3:before {
+  content: "d";
+}
+.elegant-eleganticons-4:before {
+  content: "e";
+}
+.elegant-eleganticons-5:before {
+  content: "f";
+}
+.elegant-eleganticons-6:before {
+  content: "g";
+}
+.elegant-eleganticons-7:before {
+  content: "h";
+}
+.elegant-eleganticons-8:before {
+  content: "i";
+}
+.elegant-eleganticons-9:before {
+  content: "j";
+}
+.elegant-eleganticons-10:before {
+  content: "k";
+}
+.elegant-eleganticons-11:before {
+  content: "l";
+}
+.elegant-eleganticons-12:before {
+  content: "m";
+}
+.elegant-eleganticons-13:before {
+  content: "n";
+}
+.elegant-eleganticons-14:before {
+  content: "o";
+}
+.elegant-eleganticons-15:before {
+  content: "p";
+}
+.elegant-eleganticons-16:before {
+  content: "q";
+}
+.elegant-eleganticons-17:before {
+  content: "r";
+}
+.elegant-eleganticons-18:before {
+  content: "s";
+}
+.elegant-eleganticons-19:before {
+  content: "t";
+}
+.elegant-eleganticons-20:before {
+  content: "u";
+}
+.elegant-eleganticons-21:before {
+  content: "v";
+}
+.elegant-eleganticons-22:before {
+  content: "w";
+}
+.elegant-eleganticons-23:before {
+  content: "x";
+}
+.elegant-eleganticons-24:before {
+  content: "y";
+}
+.elegant-eleganticons-25:before {
+  content: "z";
+}
+.elegant-eleganticons-26:before {
+  content: "A";
+}
+.elegant-eleganticons-27:before {
+  content: "B";
+}
+.elegant-eleganticons-28:before {
+  content: "C";
+}
+.elegant-eleganticons-29:before {
+  content: "D";
+}
+.elegant-eleganticons-30:before {
+  content: "E";
+}
+.elegant-eleganticons-31:before {
+  content: "F";
+}
+.elegant-eleganticons-32:before {
+  content: "G";
+}
+.elegant-eleganticons-33:before {
+  content: "H";
+}
+.elegant-eleganticons-34:before {
+  content: "I";
+}
+.elegant-eleganticons-35:before {
+  content: "J";
+}
+.elegant-eleganticons-36:before {
+  content: "K";
+}
+.elegant-eleganticons-37:before {
+  content: "L";
+}
+.elegant-eleganticons-38:before {
+  content: "M";
+}
+.elegant-eleganticons-39:before {
+  content: "N";
+}
+.elegant-eleganticons-40:before {
+  content: "O";
+}
+.elegant-eleganticons-41:before {
+  content: "P";
+}
+.elegant-eleganticons-42:before {
+  content: "Q";
+}
+.elegant-eleganticons-43:before {
+  content: "R";
+}
+.elegant-eleganticons-44:before {
+  content: "S";
+}
+.elegant-eleganticons-45:before {
+  content: "T";
+}
+.elegant-eleganticons-46:before {
+  content: "U";
+}
+.elegant-eleganticons-47:before {
+  content: "V";
+}
+.elegant-eleganticons-48:before {
+  content: "W";
+}
+.elegant-eleganticons-49:before {
+  content: "X";
+}
+.elegant-eleganticons-50:before {
+  content: "Y";
+}
+.elegant-eleganticons-51:before {
+  content: "Z";
+}
+.elegant-eleganticons-52:before {
+  content: "0";
+}
+.elegant-eleganticons-53:before {
+  content: "1";
+}
+.elegant-eleganticons-54:before {
+  content: "2";
+}
+.elegant-eleganticons-55:before {
+  content: "3";
+}
+.elegant-eleganticons-56:before {
+  content: "4";
+}
+.elegant-eleganticons-57:before {
+  content: "5";
+}
+.elegant-eleganticons-58:before {
+  content: "6";
+}
+.elegant-eleganticons-59:before {
+  content: "7";
+}
+.elegant-eleganticons-60:before {
+  content: "8";
+}
+.elegant-eleganticons-61:before {
+  content: "9";
+}
+.elegant-eleganticons-62:before {
+  content: "!";
+}
+.elegant-eleganticons-63:before {
+  content: "\"";
+}
+.elegant-eleganticons-64:before {
+  content: "#";
+}
+.elegant-eleganticons-65:before {
+  content: "$";
+}
+.elegant-eleganticons-66:before {
+  content: "%";
+}
+.elegant-eleganticons-67:before {
+  content: "&";
+}
+.elegant-eleganticons-68:before {
+  content: "'";
+}
+.elegant-eleganticons-69:before {
+  content: "(";
+}
+.elegant-eleganticons-70:before {
+  content: ")";
+}
+.elegant-eleganticons-71:before {
+  content: "*";
+}
+.elegant-eleganticons-72:before {
+  content: "+";
+}
+.elegant-eleganticons-73:before {
+  content: ",";
+}
+.elegant-eleganticons-74:before {
+  content: "-";
+}
+.elegant-eleganticons-75:before {
+  content: ".";
+}
+.elegant-eleganticons-76:before {
+  content: "/";
+}
+.elegant-eleganticons-77:before {
+  content: ":";
+}
+.elegant-eleganticons-78:before {
+  content: ";";
+}
+.elegant-eleganticons-79:before {
+  content: "<";
+}
+.elegant-eleganticons-80:before {
+  content: "=";
+}
+.elegant-eleganticons-81:before {
+  content: ">";
+}
+.elegant-eleganticons-82:before {
+  content: "?";
+}
+.elegant-eleganticons-83:before {
+  content: "@";
+}
+.elegant-eleganticons-84:before {
+  content: "[";
+}
+.elegant-eleganticons-85:before {
+  content: "]";
+}
+.elegant-eleganticons-86:before {
+  content: "^";
+}
+.elegant-eleganticons-87:before {
+  content: "_";
+}
+.elegant-eleganticons-88:before {
+  content: "`";
+}
+.elegant-eleganticons-89:before {
+  content: "{";
+}
+.elegant-eleganticons-90:before {
+  content: "|";
+}
+.elegant-eleganticons-91:before {
+  content: "}";
+}
+.elegant-eleganticons-92:before {
+  content: "~";
+}
+.elegant-eleganticons-93:before {
+  content: "\";
+}
+.elegant-eleganticons-94:before {
+  content: "\e000";
+}
+.elegant-eleganticons-95:before {
+  content: "\e001";
+}
+.elegant-eleganticons-96:before {
+  content: "\e002";
+}
+.elegant-eleganticons-97:before {
+  content: "\e003";
+}
+.elegant-eleganticons-98:before {
+  content: "\e004";
+}
+.elegant-eleganticons-99:before {
+  content: "\e005";
+}
+.elegant-eleganticons-100:before {
+  content: "\e006";
+}
+.elegant-eleganticons-101:before {
+  content: "\e007";
+}
+.elegant-eleganticons-102:before {
+  content: "\e008";
+}
+.elegant-eleganticons-103:before {
+  content: "\e009";
+}
+.elegant-eleganticons-104:before {
+  content: "\e00a";
+}
+.elegant-eleganticons-105:before {
+  content: "\e00b";
+}
+.elegant-eleganticons-106:before {
+  content: "\e00c";
+}
+.elegant-eleganticons-107:before {
+  content: "\e00d";
+}
+.elegant-eleganticons-108:before {
+  content: "\e00e";
+}
+.elegant-eleganticons-109:before {
+  content: "\e00f";
+}
+.elegant-eleganticons-110:before {
+  content: "\e010";
+}
+.elegant-eleganticons-111:before {
+  content: "\e011";
+}
+.elegant-eleganticons-112:before {
+  content: "\e012";
+}
+.elegant-eleganticons-113:before {
+  content: "\e013";
+}
+.elegant-eleganticons-114:before {
+  content: "\e014";
+}
+.elegant-eleganticons-115:before {
+  content: "\e015";
+}
+.elegant-eleganticons-116:before {
+  content: "\e016";
+}
+.elegant-eleganticons-117:before {
+  content: "\e017";
+}
+.elegant-eleganticons-118:before {
+  content: "\e018";
+}
+.elegant-eleganticons-119:before {
+  content: "\e019";
+}
+.elegant-eleganticons-120:before {
+  content: "\e01a";
+}
+.elegant-eleganticons-121:before {
+  content: "\e01b";
+}
+.elegant-eleganticons-122:before {
+  content: "\e01c";
+}
+.elegant-eleganticons-123:before {
+  content: "\e01d";
+}
+.elegant-eleganticons-124:before {
+  content: "\e01e";
+}
+.elegant-eleganticons-125:before {
+  content: "\e01f";
+}
+.elegant-eleganticons-126:before {
+  content: "\e020";
+}
+.elegant-eleganticons-127:before {
+  content: "\e021";
+}
+.elegant-eleganticons-128:before {
+  content: "\e022";
+}
+.elegant-eleganticons-129:before {
+  content: "\e023";
+}
+.elegant-eleganticons-130:before {
+  content: "\e024";
+}
+.elegant-eleganticons-131:before {
+  content: "\e025";
+}
+.elegant-eleganticons-132:before {
+  content: "\e026";
+}
+.elegant-eleganticons-133:before {
+  content: "\e027";
+}
+.elegant-eleganticons-134:before {
+  content: "\e028";
+}
+.elegant-eleganticons-135:before {
+  content: "\e029";
+}
+.elegant-eleganticons-136:before {
+  content: "\e02a";
+}
+.elegant-eleganticons-137:before {
+  content: "\e02b";
+}
+.elegant-eleganticons-138:before {
+  content: "\e02c";
+}
+.elegant-eleganticons-139:before {
+  content: "\e02d";
+}
+.elegant-eleganticons-140:before {
+  content: "\e02e";
+}
+.elegant-eleganticons-141:before {
+  content: "\e02f";
+}
+.elegant-eleganticons-142:before {
+  content: "\e030";
+}
+.elegant-eleganticons-143:before {
+  content: "\e031";
+}
+.elegant-eleganticons-144:before {
+  content: "\e032";
+}
+.elegant-eleganticons-145:before {
+  content: "\e033";
+}
+.elegant-eleganticons-146:before {
+  content: "\e034";
+}
+.elegant-eleganticons-147:before {
+  content: "\e035";
+}
+.elegant-eleganticons-148:before {
+  content: "\e036";
+}
+.elegant-eleganticons-149:before {
+  content: "\e037";
+}
+.elegant-eleganticons-150:before {
+  content: "\e038";
+}
+.elegant-eleganticons-151:before {
+  content: "\e039";
+}
+.elegant-eleganticons-152:before {
+  content: "\e03a";
+}
+.elegant-eleganticons-153:before {
+  content: "\e03b";
+}
+.elegant-eleganticons-154:before {
+  content: "\e03c";
+}
+.elegant-eleganticons-155:before {
+  content: "\e03d";
+}
+.elegant-eleganticons-156:before {
+  content: "\e03e";
+}
+.elegant-eleganticons-157:before {
+  content: "\e03f";
+}
+.elegant-eleganticons-158:before {
+  content: "\e040";
+}
+.elegant-eleganticons-159:before {
+  content: "\e041";
+}
+.elegant-eleganticons-160:before {
+  content: "\e042";
+}
+.elegant-eleganticons-161:before {
+  content: "\e043";
+}
+.elegant-eleganticons-162:before {
+  content: "\e044";
+}
+.elegant-eleganticons-163:before {
+  content: "\e045";
+}
+.elegant-eleganticons-164:before {
+  content: "\e046";
+}
+.elegant-eleganticons-165:before {
+  content: "\e047";
+}
+.elegant-eleganticons-166:before {
+  content: "\e048";
+}
+.elegant-eleganticons-167:before {
+  content: "\e049";
+}
+.elegant-eleganticons-168:before {
+  content: "\e04a";
+}
+.elegant-eleganticons-169:before {
+  content: "\e04b";
+}
+.elegant-eleganticons-170:before {
+  content: "\e04c";
+}
+.elegant-eleganticons-171:before {
+  content: "\e04d";
+}
+.elegant-eleganticons-172:before {
+  content: "\e04e";
+}
+.elegant-eleganticons-173:before {
+  content: "\e04f";
+}
+.elegant-eleganticons-174:before {
+  content: "\e050";
+}
+.elegant-eleganticons-175:before {
+  content: "\e051";
+}
+.elegant-eleganticons-176:before {
+  content: "\e052";
+}
+.elegant-eleganticons-177:before {
+  content: "\e053";
+}
+.elegant-eleganticons-178:before {
+  content: "\e054";
+}
+.elegant-eleganticons-179:before {
+  content: "\e055";
+}
+.elegant-eleganticons-180:before {
+  content: "\e056";
+}
+.elegant-eleganticons-181:before {
+  content: "\e057";
+}
+.elegant-eleganticons-182:before {
+  content: "\e058";
+}
+.elegant-eleganticons-183:before {
+  content: "\e059";
+}
+.elegant-eleganticons-184:before {
+  content: "\e05a";
+}
+.elegant-eleganticons-185:before {
+  content: "\e05b";
+}
+.elegant-eleganticons-186:before {
+  content: "\e05c";
+}
+.elegant-eleganticons-187:before {
+  content: "\e05d";
+}
+.elegant-eleganticons-188:before {
+  content: "\e05e";
+}
+.elegant-eleganticons-189:before {
+  content: "\e05f";
+}
+.elegant-eleganticons-190:before {
+  content: "\e060";
+}
+.elegant-eleganticons-191:before {
+  content: "\e061";
+}
+.elegant-eleganticons-192:before {
+  content: "\e062";
+}
+.elegant-eleganticons-193:before {
+  content: "\e063";
+}
+.elegant-eleganticons-194:before {
+  content: "\e064";
+}
+.elegant-eleganticons-195:before {
+  content: "\e065";
+}
+.elegant-eleganticons-196:before {
+  content: "\e066";
+}
+.elegant-eleganticons-197:before {
+  content: "\e067";
+}
+.elegant-eleganticons-198:before {
+  content: "\e068";
+}
+.elegant-eleganticons-199:before {
+  content: "\e069";
+}
+.elegant-eleganticons-200:before {
+  content: "\e06a";
+}
+.elegant-eleganticons-201:before {
+  content: "\e06b";
+}
+.elegant-eleganticons-202:before {
+  content: "\e06c";
+}
+.elegant-eleganticons-203:before {
+  content: "\e06d";
+}
+.elegant-eleganticons-204:before {
+  content: "\e06e";
+}
+.elegant-eleganticons-205:before {
+  content: "\e06f";
+}
+.elegant-eleganticons-206:before {
+  content: "\e070";
+}
+.elegant-eleganticons-207:before {
+  content: "\e071";
+}
+.elegant-eleganticons-208:before {
+  content: "\e072";
+}
+.elegant-eleganticons-209:before {
+  content: "\e073";
+}
+.elegant-eleganticons-210:before {
+  content: "\e074";
+}
+.elegant-eleganticons-211:before {
+  content: "\e075";
+}
+.elegant-eleganticons-212:before {
+  content: "\e076";
+}
+.elegant-eleganticons-213:before {
+  content: "\e077";
+}
+.elegant-eleganticons-214:before {
+  content: "\e078";
+}
+.elegant-eleganticons-215:before {
+  content: "\e079";
+}
+.elegant-eleganticons-216:before {
+  content: "\e07a";
+}
+.elegant-eleganticons-217:before {
+  content: "\e07b";
+}
+.elegant-eleganticons-218:before {
+  content: "\e07c";
+}
+.elegant-eleganticons-219:before {
+  content: "\e07d";
+}
+.elegant-eleganticons-220:before {
+  content: "\e07e";
+}
+.elegant-eleganticons-221:before {
+  content: "\e07f";
+}
+.elegant-eleganticons-222:before {
+  content: "\e080";
+}
+.elegant-eleganticons-223:before {
+  content: "\e081";
+}
+.elegant-eleganticons-224:before {
+  content: "\e082";
+}
+.elegant-eleganticons-225:before {
+  content: "\e083";
+}
+.elegant-eleganticons-226:before {
+  content: "\e084";
+}
+.elegant-eleganticons-227:before {
+  content: "\e085";
+}
+.elegant-eleganticons-228:before {
+  content: "\e086";
+}
+.elegant-eleganticons-229:before {
+  content: "\e087";
+}
+.elegant-eleganticons-230:before {
+  content: "\e088";
+}
+.elegant-eleganticons-231:before {
+  content: "\e089";
+}
+.elegant-eleganticons-232:before {
+  content: "\e08a";
+}
+.elegant-eleganticons-233:before {
+  content: "\e08b";
+}
+.elegant-eleganticons-234:before {
+  content: "\e08c";
+}
+.elegant-eleganticons-235:before {
+  content: "\e08d";
+}
+.elegant-eleganticons-236:before {
+  content: "\e08e";
+}
+.elegant-eleganticons-237:before {
+  content: "\e08f";
+}
+.elegant-eleganticons-238:before {
+  content: "\e090";
+}
+.elegant-eleganticons-239:before {
+  content: "\e091";
+}
+.elegant-eleganticons-240:before {
+  content: "\e092";
+}
+.elegant-eleganticons-241:before {
+  content: "\e093";
+}
+.elegant-eleganticons-242:before {
+  content: "\e094";
+}
+.elegant-eleganticons-243:before {
+  content: "\e095";
+}
+.elegant-eleganticons-244:before {
+  content: "\e096";
+}
+.elegant-eleganticons-245:before {
+  content: "\e097";
+}
+.elegant-eleganticons-246:before {
+  content: "\e098";
+}
+.elegant-eleganticons-247:before {
+  content: "\e099";
+}
+.elegant-eleganticons-248:before {
+  content: "\e09a";
+}
+.elegant-eleganticons-249:before {
+  content: "\e09b";
+}
+.elegant-eleganticons-250:before {
+  content: "\e09c";
+}
+.elegant-eleganticons-251:before {
+  content: "\e09d";
+}
+.elegant-eleganticons-252:before {
+  content: "\e09e";
+}
+.elegant-eleganticons-253:before {
+  content: "\e09f";
+}
+.elegant-eleganticons-254:before {
+  content: "\e0a0";
+}
+.elegant-eleganticons-255:before {
+  content: "\e0a1";
+}
+.elegant-eleganticons-256:before {
+  content: "\e0a2";
+}
+.elegant-eleganticons-257:before {
+  content: "\e0a3";
+}
+.elegant-eleganticons-258:before {
+  content: "\e0a4";
+}
+.elegant-eleganticons-259:before {
+  content: "\e0a5";
+}
+.elegant-eleganticons-260:before {
+  content: "\e0a6";
+}
+.elegant-eleganticons-261:before {
+  content: "\e0a7";
+}
+.elegant-eleganticons-262:before {
+  content: "\e0a8";
+}
+.elegant-eleganticons-263:before {
+  content: "\e0a9";
+}
+.elegant-eleganticons-264:before {
+  content: "\e0aa";
+}
+.elegant-eleganticons-265:before {
+  content: "\e0ab";
+}
+.elegant-eleganticons-266:before {
+  content: "\e0ac";
+}
+.elegant-eleganticons-267:before {
+  content: "\e0ad";
+}
+.elegant-eleganticons-268:before {
+  content: "\e0ae";
+}
+.elegant-eleganticons-269:before {
+  content: "\e0af";
+}
+.elegant-eleganticons-270:before {
+  content: "\e0b0";
+}
+.elegant-eleganticons-271:before {
+  content: "\e0b1";
+}
+.elegant-eleganticons-272:before {
+  content: "\e0b2";
+}
+.elegant-eleganticons-273:before {
+  content: "\e0b3";
+}
+.elegant-eleganticons-274:before {
+  content: "\e0b4";
+}
+.elegant-eleganticons-275:before {
+  content: "\e0b5";
+}
+.elegant-eleganticons-276:before {
+  content: "\e0b6";
+}
+.elegant-eleganticons-277:before {
+  content: "\e0b7";
+}
+.elegant-eleganticons-278:before {
+  content: "\e0b8";
+}
+.elegant-eleganticons-279:before {
+  content: "\e0b9";
+}
+.elegant-eleganticons-280:before {
+  content: "\e0ba";
+}
+.elegant-eleganticons-281:before {
+  content: "\e0bb";
+}
+.elegant-eleganticons-282:before {
+  content: "\e0bc";
+}
+.elegant-eleganticons-283:before {
+  content: "\e0bd";
+}
+.elegant-eleganticons-284:before {
+  content: "\e0be";
+}
+.elegant-eleganticons-285:before {
+  content: "\e0bf";
+}
+.elegant-eleganticons-286:before {
+  content: "\e0c0";
+}
+.elegant-eleganticons-287:before {
+  content: "\e0c1";
+}
+.elegant-eleganticons-288:before {
+  content: "\e0c2";
+}
+.elegant-eleganticons-289:before {
+  content: "\e0c3";
+}
+.elegant-eleganticons-290:before {
+  content: "\e0c4";
+}
+.elegant-eleganticons-291:before {
+  content: "\e0c5";
+}
+.elegant-eleganticons-292:before {
+  content: "\e0c6";
+}
+.elegant-eleganticons-293:before {
+  content: "\e0c7";
+}
+.elegant-eleganticons-294:before {
+  content: "\e0c8";
+}
+.elegant-eleganticons-295:before {
+  content: "\e0c9";
+}
+.elegant-eleganticons-296:before {
+  content: "\e0ca";
+}
+.elegant-eleganticons-297:before {
+  content: "\e0cb";
+}
+.elegant-eleganticons-298:before {
+  content: "\e0cc";
+}
+.elegant-eleganticons-299:before {
+  content: "\e0cd";
+}
+.elegant-eleganticons-300:before {
+  content: "\e0ce";
+}
+.elegant-eleganticons-301:before {
+  content: "\e0cf";
+}
+.elegant-eleganticons-302:before {
+  content: "\e0d0";
+}
+.elegant-eleganticons-303:before {
+  content: "\e0d1";
+}
+.elegant-eleganticons-304:before {
+  content: "\e0d2";
+}
+.elegant-eleganticons-305:before {
+  content: "\e0d3";
+}
+.elegant-eleganticons-306:before {
+  content: "\e0d4";
+}
+.elegant-eleganticons-307:before {
+  content: "\e0d5";
+}
+.elegant-eleganticons-308:before {
+  content: "\e0d6";
+}
+.elegant-eleganticons-309:before {
+  content: "\e0d7";
+}
+.elegant-eleganticons-310:before {
+  content: "\e0d8";
+}
+.elegant-eleganticons-311:before {
+  content: "\e0d9";
+}
+.elegant-eleganticons-312:before {
+  content: "\e0da";
+}
+.elegant-eleganticons-313:before {
+  content: "\e0db";
+}
+.elegant-eleganticons-314:before {
+  content: "\e0dc";
+}
+.elegant-eleganticons-315:before {
+  content: "\e0dd";
+}
+.elegant-eleganticons-316:before {
+  content: "\e0de";
+}
+.elegant-eleganticons-317:before {
+  content: "\e0df";
+}
+.elegant-eleganticons-318:before {
+  content: "\e0e0";
+}
+.elegant-eleganticons-319:before {
+  content: "\e0e1";
+}
+.elegant-eleganticons-320:before {
+  content: "\e0e2";
+}
+.elegant-eleganticons-321:before {
+  content: "\e0e3";
+}
+.elegant-eleganticons-322:before {
+  content: "\e0e4";
+}
+.elegant-eleganticons-323:before {
+  content: "\e0e5";
+}
+.elegant-eleganticons-324:before {
+  content: "\e0e6";
+}
+.elegant-eleganticons-325:before {
+  content: "\e0e7";
+}
+.elegant-eleganticons-326:before {
+  content: "\e0e8";
+}
+.elegant-eleganticons-327:before {
+  content: "\e0e9";
+}
+.elegant-eleganticons-328:before {
+  content: "\e0ea";
+}
+.elegant-eleganticons-329:before {
+  content: "\e0eb";
+}
+.elegant-eleganticons-330:before {
+  content: "\e0ec";
+}
+.elegant-eleganticons-331:before {
+  content: "\e0ed";
+}
+.elegant-eleganticons-332:before {
+  content: "\e0ee";
+}
+.elegant-eleganticons-333:before {
+  content: "\e0ef";
+}
+.elegant-eleganticons-334:before {
+  content: "\e0f0";
+}
+.elegant-eleganticons-335:before {
+  content: "\e0f1";
+}
+.elegant-eleganticons-336:before {
+  content: "\e0f2";
+}
+.elegant-eleganticons-337:before {
+  content: "\e0f3";
+}
+.elegant-eleganticons-338:before {
+  content: "\e0f4";
+}
+.elegant-eleganticons-339:before {
+  content: "\e0f5";
+}
+.elegant-eleganticons-340:before {
+  content: "\e0f6";
+}
+.elegant-eleganticons-341:before {
+  content: "\e0f7";
+}
+.elegant-eleganticons-342:before {
+  content: "\e0f8";
+}
+.elegant-eleganticons-343:before {
+  content: "\e0f9";
+}
+.elegant-eleganticons-344:before {
+  content: "\e0fa";
+}
+.elegant-eleganticons-345:before {
+  content: "\e0fb";
+}
+.elegant-eleganticons-346:before {
+  content: "\e0fc";
+}
+.elegant-eleganticons-347:before {
+  content: "\e0fd";
+}
+.elegant-eleganticons-348:before {
+  content: "\e0fe";
+}
+.elegant-eleganticons-349:before {
+  content: "\e0ff";
+}
+.elegant-eleganticons-350:before {
+  content: "\e100";
+}
+.elegant-eleganticons-351:before {
+  content: "\e101";
+}
+.elegant-eleganticons-352:before {
+  content: "\e102";
+}
+.elegant-eleganticons-353:before {
+  content: "\e103";
+}
+.elegant-eleganticons-354:before {
+  content: "\e104";
+}
+.elegant-eleganticons-355:before {
+  content: "\e105";
+}
+.elegant-eleganticons-356:before {
+  content: "\e106";
+}
+.elegant-eleganticons-357:before {
+  content: "\e107";
+}
+.elegant-eleganticons-358:before {
+  content: "\e108";
+}
+.elegant-eleganticons-359:before {
+  content: "\e109";
+}
