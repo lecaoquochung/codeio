@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+ <!--
+
+  Memo
+
+  AngularJS expressions can be written inside double braces: {{ expression }}.
+
+  AngularJS expressions can also be written inside a directive: ng-bind="expression".
+
+  AngularJS will resolve the expression, and return the result exactly where the expression is written.
+
+  AngularJS expressions are much like JavaScript expressions: They can contain literals, operators, and variables.
+
+  Example {{ 5 + 5 }} or {{ firstName + " " + lastName }}
+
+  AngularJS Expressions vs. JavaScript Expressions
+
+  Like JavaScript expressions, AngularJS expressions can contain literals, operators, and variables.
+
+  Unlike JavaScript expressions, AngularJS expressions can be written inside HTML.
+
+  AngularJS expressions do not support conditionals, loops, and exceptions, while JavaScript expressions do.
+
+-->
+
+<div ng-app="" ng-init="
+  myCol='lightgreen';
+  quantity=1;
+  cost=5;
+  firstName='Hung';
+  lastName='Le';
+  person={firstName:'Hung',lastName:'Le'};
+  array=[1,15,47,2,40]
+">
+
+  <!-- Expressions -->
+ 	<p>My first expression: {{ 5 + 5 }}</p>
+
+  <!-- Input -->
+  <input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
+
+  <!-- Number -->
+  <p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+
+  <!-- String -->
+  <p>My name is {{ lastName + " " + firstName }}</p>
+  <p>(ng-bind) My name is <span ng-bind="firstName + ' ' + lastName"></span></p>
+
+  <!-- Angularjs Object -->
+  <p>(Angularjs Object) My name is {{ person.firstName }}</p>
+
+  <!-- Angularjs Array -->
+  <p>Angularjs Array: {{ array[2] }}</p>
+  <p>Angularjs Array (ng-bind) :<span ng-bind="array[2]"></span></p>
+
+</div>
+
+</body>
+</html>
