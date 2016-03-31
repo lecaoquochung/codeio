@@ -1,4 +1,4 @@
-var http = require('http');
+var http = require('http'); // module
 var url = require('url');
 var static = require('node-static');
 var file = new static.Server();
@@ -15,6 +15,3 @@ http.createServer(function (req, res) {
 }).listen(9000, '192.168.11.200');
 
 console.log('Server running at http://192.168.11.200');
-
-
-
