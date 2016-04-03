@@ -20,7 +20,11 @@
 ## Express Basics
 - https://github.com/lecaoquochung/codeio/issues/7
 ### Init (Installling & Setting up Express)
-- npm install -g express
+```
+sudo npm install -g express
+sudo npm install -g express-generator
+express express
+```
 ### Routing System
 ### Template (Jade)
 ### Working with View
