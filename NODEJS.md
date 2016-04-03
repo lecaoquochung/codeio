@@ -18,8 +18,10 @@
  - https://github.com/lecaoquochung/codeio/commit/1471e3fb5eee181fb0a13e81d15ff44e30d5d474
 
 ## Express Basics
+- https://github.com/lecaoquochung/codeio/issues/7
 ### Init (Installling & Setting up Express)
+- npm install -g express
 ### Routing System
-### Jade Templating
+### Template (Jade)
 ### Working with View
 ### Module (Nodemailer)
