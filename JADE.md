@@ -13,5 +13,10 @@ html
     a(href='#',rel='nofollow')
 ```
 
+- Concat
+```
+#{ }
+```
+
 ## HTML to JADE converter
 - http://html2jade.org/
