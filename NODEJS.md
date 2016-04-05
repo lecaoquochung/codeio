@@ -20,6 +20,7 @@
 ## Express Basics
 - https://github.com/lecaoquochung/codeio/issues/7
 ### Init (Installling & Setting up Express)
+- https://github.com/lecaoquochung/codeio/commit/4d64fd25213e98cf181a1ce24e126d09383b6c4f
 ```
 sudo npm install -g express
 sudo npm install -g express-generator
