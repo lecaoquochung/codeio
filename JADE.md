@@ -12,3 +12,6 @@ html
   p
     a(href='#',rel='nofollow')
 ```
+
+## HTML to JADE converter
+- http://html2jade.org/

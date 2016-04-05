@@ -25,8 +25,12 @@
 sudo npm install -g express
 sudo npm install -g express-generator
 express express
+npm start
 ```
 ### Routing System
+
 ### Template (Jade)
+- basic syntax
+ - https://github.com/lecaoquochung/codeio/commit/6415548075755c94d478ad4b15e016012678f689
 ### Working with View
 ### Module (Nodemailer)
