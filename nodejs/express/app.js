@@ -30,12 +30,51 @@ app.use('/users', users);
 app.use('/about', about);
 app.use('/contact', contact);
 
+app.get('/', function(req, res){
+  res.render('index', {title: 'Welcome'});
+});
+
+app.post('/contact/send', function(req, res){
+  console.log('Test');
+  var transporter = nodemailer.createTransport({
+    service: 'Gmail',
+    auth: {
+      user: '@gmail',
+      pass: ''
+    }
+  });
+
+  var mailOptions = {
+    from:'Le Hung <@gmail.com>',
+    to: '',
+    subject: 'Form submition',
+    text: 'New notification ' +req.body.name+ 'Email: '+req.body.email+ 'Message: ' +req.body.message,
+    html: '<p>You have received a message</p>'
+  };
+
+  transporter.sendMail(mailOptions, function(error, info) {
+    if(error){
+      console.log(error);
+      res.redirect('/');
+    } else {
+      console.log('message sent');
+      res.redirect('/');
+    }
+  });
+
+});
+
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
+
+// app.listen(3000);
+// console.log('Running on port 3000');
 
 // error handlers
 
